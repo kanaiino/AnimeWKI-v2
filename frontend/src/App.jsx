@@ -11,6 +11,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Profile from "./pages/Profile/Profile";
 import WatchPage from "./pages/WatchPage/WatchPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
@@ -42,7 +43,7 @@ function App() {
         setAsideActive(false);
       }
     } else {
-      setAsideActive(prev => !prev);
+      setAsideActive((prev) => !prev);
     }
   };
 
@@ -55,7 +56,7 @@ function App() {
         setIsRightPanelOpen(false);
       }
     } else {
-      setIsRightPanelOpen(prev => !prev);
+      setIsRightPanelOpen((prev) => !prev);
     }
   };
 
@@ -67,10 +68,17 @@ function App() {
           onToggleRightPanel={toggleRightPanel}
           isMobile={isMobile}
         />
-<Aside isActive={asideActive} onClose={() => setAsideActive(false)} isMobile={isMobile} />
+        <Aside
+          isActive={asideActive}
+          onClose={() => setAsideActive(false)}
+          isMobile={isMobile}
+        />
         <Routes>
           <Route path="/login" element={<Login isActive={asideActive} />} />
-          <Route path="/register" element={<Register isActive={asideActive} />} />
+          <Route
+            path="/register"
+            element={<Register isActive={asideActive} />}
+          />
           <Route path="/" element={<Home isActive={asideActive} />} />
           <Route
             path="/catalog"
@@ -82,7 +90,10 @@ function App() {
               />
             }
           />
-          <Route path="/anime/:id" element={<AnimePage isActive={asideActive} />} />
+          <Route
+            path="/anime/:id"
+            element={<AnimePage isActive={asideActive} />}
+          />
           <Route
             path="/profile"
             element={
@@ -104,6 +115,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer isActive={asideActive}/>
       </BrowserRouter>
     </AuthProvider>
   );
