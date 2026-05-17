@@ -1,0 +1,57 @@
+@import url(../../index.css);
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+
+  &-cards {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 2rem ;
+    width: 2rem ;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: .5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    cursor: pointer;
+    border: 1px solid var(--color-muted);
+  }
+
+  .anime-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    gap: 1rem;
+
+    &-title {
+      font-size: 1.25rem;
+    }
+  }
+}

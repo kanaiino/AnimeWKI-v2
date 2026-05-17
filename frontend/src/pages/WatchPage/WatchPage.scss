@@ -1,0 +1,61 @@
+@import url(../../index.css);
+
+.watch-page {
+  margin-top: 56px;
+  padding: 2rem;
+
+  &-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  &__video {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 0.5rem;
+    background: var(--color-bg);
+  }
+
+  &__error {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-accent);
+    border-radius: 0.75rem;
+    color: var(--color-current);
+  }
+  &--padding {
+    margin-right: 306px;
+  }
+}
+@media (max-width: 768px) {
+  .watch-page {
+    gap: 1rem;
+
+    &-title {
+      font-size: 1.25rem;
+    }
+  }
+}

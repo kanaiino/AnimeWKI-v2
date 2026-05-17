@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000",
+    "kodik": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run kodik\""
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.15",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

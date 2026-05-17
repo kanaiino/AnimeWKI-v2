@@ -1,0 +1,12 @@
+.rating-stars {
+  display: inline-flex;
+  gap: 0.25rem;
+  user-select: none;
+  .star {
+    font-size: 1.5rem;
+    color: var(--color-current);
+    &.filled {
+      color: var(--color-yellow);
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@example.com",
+      "password": "123456",
+      "name": "Demo User"
+    },
+    {
+      "id": "tBKLJTetM4U",
+      "name": "Фито",
+      "email": "kanaiino@gmail.com",
+      "password": "kanaiino"
+    },
+    {
+      "id": "5ALvxx4IAQI",
+      "name": "fito",
+      "email": "fito@ww.ww",
+      "password": "fitofito"
+    }
+  ],
+  "userAnime": [
+    {
+      "userId": 1,
+      "animeId": 1,
+      "status": "watching",
+      "score": 4,
+      "id": "XWY4Xn1VLxM",
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-09T15:23:24.312Z"
+    },
+    {
+      "userId": 1,
+      "animeId": 52034,
+      "status": "",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "id": "ADjYbWZ-d2k",
+      "updatedAt": "2026-05-09T17:45:12.795Z"
+    },
+    {
+      "userId": 1,
+      "animeId": 57555,
+      "status": "on_hold",
+      "score": 8,
+      "lastWatchedEpisode": 3,
+      "updatedAt": "2026-05-09T15:33:00.294Z",
+      "id": "3taTn_GPxNE"
+    },
+    {
+      "userId": 1,
+      "animeId": 16498,
+      "status": "",
+      "score": null,
+      "updatedAt": "2026-05-10T10:34:12.759Z",
+      "lastWatchedEpisode": 1,
+      "id": "qw276cEovg4"
+    },
+    {
+      "userId": 1,
+      "animeId": 52991,
+      "status": "",
+      "score": null,
+      "lastWatchedEpisode": 1,
+      "updatedAt": "2026-05-10T06:54:44.751Z",
+      "id": "cSZzmxPYoPY"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 16498,
+      "status": "favorite",
+      "score": 9,
+      "lastWatchedEpisode": 1,
+      "updatedAt": "2026-05-11T07:30:05.365Z",
+      "id": "IWRqKcztE-A"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 52991,
+      "status": "completed",
+      "score": 9,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T15:49:24.001Z",
+      "id": "NyO4XnDbPr8"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 38000,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:18.806Z",
+      "id": "fuUFZJ50osQ"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 11757,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:24.134Z",
+      "id": "3J1xe3dXqys"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 40748,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:28.311Z",
+      "id": "zHGKA_cxRxE"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 22319,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:34.009Z",
+      "id": "hQDVAO5QJQ4"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 31240,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:42.116Z",
+      "id": "szhFpLBOZZY"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 30276,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:47.065Z",
+      "id": "N4RLAy1HeOM"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 28851,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:05:57.951Z",
+      "id": "l3N33O1cfJk"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 38691,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:06:08.083Z",
+      "id": "gVFuMjLIDS4"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 32281,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:09.193Z",
+      "id": "NVyE-fNJLvs"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 25777,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:13.217Z",
+      "id": "NYr2cqZSSSI"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 35760,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:19.097Z",
+      "id": "LRX4jOFe79M"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 20507,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:27.098Z",
+      "id": "nQLdRFWLzIE"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 21881,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:34.555Z",
+      "id": "hGV7a3uMjp4"
+    },
+    {
+      "userId": "tBKLJTetM4U",
+      "animeId": 9919,
+      "status": "completed",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-10T18:09:40.683Z",
+      "id": "jyAtW0F6Sa8"
+    },
+    {
+      "userId": "5ALvxx4IAQI",
+      "animeId": 16498,
+      "status": "favorite",
+      "score": null,
+      "lastWatchedEpisode": null,
+      "updatedAt": "2026-05-17T21:23:30.116Z",
+      "id": "DxTzFDnPnog"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

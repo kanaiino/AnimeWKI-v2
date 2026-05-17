@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-bg: #01050a;
+  --color-accent: #19171c;
+  --color-secondary: #322e38;
+  --color-current: #a4a4a4;
+  --color-muted: rgba(164, 164, 164, 0.2);
+  --color-green: #79b159;
+  --color-dgreen: #217721;
+  --color-red: #a73a3a;
+  --color-dred: rgb(80, 23, 23);
+  --color-yellow: #ffd900;
+
+  --sans: "Montserrat", Roboto, sans-serif;
+  --sans-second: "Cause", Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.icon {
+  height: 2rem;
+  fill: var(--color-current);
+}
+
+.btn {
+  height: 42px;
+  max-height: 42px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+.btn-small {
+    background: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: var(--color-current);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+    }
+
+    &.active {
+      background: var(--color-green);
+      color: white;
+      background-image: linear-gradient(
+        150deg,
+        var(--color-green) 0%,
+        var(--color-dgreen) 75%
+      );
+      color: var(--color-white);
+    }
+}
+
+.btn-green,
+.logo-green {
+  background: linear-gradient(
+    150deg,
+    var(--color-green) 25%,
+    var(--color-dgreen) 100%
+  );
+  color: var(--color-white);
+  &:hover {
+    background-image: linear-gradient(
+      150deg,
+      var(--color-green) 0%,
+      var(--color-dgreen) 75%
+    );
+    color: var(--color-white);
+  }
+}
+.btn-red {
+  background: linear-gradient(
+    150deg,
+    var(--color-red) 25%,
+    var(--color-dred) 100%
+  );
+  color: var(--color-white);
+  &:hover {
+    background-image: linear-gradient(
+      150deg,
+      var(--color-red) 0%,
+      var(--color-dred) 75%
+    );
+    color: var(--color-white);
+  }
+}
+
+      .logo {
+        padding: 0;
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: var(--sans-second);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+.input {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  &::placeholder {
+    color: var(--color-current);
+  }
+}
+
+.error-input {
+  background-color: var(--color-dred);
+  &::placeholder {
+    color: var(--color-red);
+  }
+}
+.error {
+  color: var(--color-red);
+}
+
+.searchBar {
+  position: relative;
+  .icon {
+    height: 1.8rem;
+    position: absolute;
+    z-index: 61;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+  }
+  .input {
+    padding-left: 4rem;
+  }
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 7px 0;
+}
+
+.anime-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
