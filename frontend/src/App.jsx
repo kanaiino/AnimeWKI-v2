@@ -14,19 +14,17 @@ import WatchPage from "./pages/WatchPage/WatchPage";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
-  const [asideActive, setAsideActive] = useState(!isMobile);       // на десктопе открыта, на мобильных закрыта
-  const [isRightPanelOpen, setIsRightPanelOpen] = useState(!isMobile); // на десктопе открыта, на мобильных закрыта
+  const [asideActive, setAsideActive] = useState(!isMobile);
+  const [isRightPanelOpen, setIsRightPanelOpen] = useState(!isMobile);
 
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 1024;
       setIsMobile(mobile);
       if (mobile) {
-        // При переходе на мобильный вид обе панели закрываются
         setAsideActive(false);
         setIsRightPanelOpen(false);
       } else {
-        // При переходе на десктоп – обе открываются
         setAsideActive(true);
         setIsRightPanelOpen(true);
       }

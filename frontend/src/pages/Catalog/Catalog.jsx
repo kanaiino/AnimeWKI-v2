@@ -108,7 +108,6 @@ function Catalog({ isActive, isRightPanelOpen, isMobile }) {
     if (success) pageRef.current = nextPage;
   }, [loadAnime, loadingMore, hasMore]);
 
-  // На десктопе правая панель всегда рендерится, на мобильных – только если открыта
   const showRightPanel = !isMobile || isRightPanelOpen;
 
   return (
