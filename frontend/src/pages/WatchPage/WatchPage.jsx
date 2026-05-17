@@ -32,7 +32,7 @@ function WatchPage({ isActive, isRightPanelOpen, isMobile }) {
   const fetchKodikData = useCallback(async () => {
     try {
       const res = await fetch(
-        `http://localhost:5001/api/kodik/search?shikimori_id=${shikimoriId}`,
+        `http://localhost:5003/api/kodik/search?shikimori_id=${shikimoriId}`,
       );
       if (!res.ok) throw new Error('Не удалось загрузить данные плеера');
       const data = await res.json();
