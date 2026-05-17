@@ -56,7 +56,7 @@ function WatchPage({ isActive, isRightPanelOpen, isMobile }) {
     const loadProgress = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/userAnime?userId=${user.id}&animeId=${shikimoriId}`,
+          `http://localhost:5002/userAnime?userId=${user.id}&animeId=${shikimoriId}`,
         );
         const data = await res.json();
         if (data.length && data[0].lastWatchedEpisode) {

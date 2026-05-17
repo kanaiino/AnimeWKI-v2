@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "server": "json-server --watch db.json --port 5000",
+    "server": "json-server --watch db.json --port 5002",
     "kodik": "node server.js",
     "dev": "concurrently \"npm run server\" \"npm run kodik\""
   },

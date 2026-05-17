@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = 'http://localhost:5002';
 
 export const getUserAnimeEntry = async (userId, animeId) => {
   const res = await fetch(`${API_URL}/userAnime`);

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext(null);
-const API_URL = 'http://localhost:5000';
+const API_URL = 'http://localhost:5002';
 
 const validateEmail = (email) => {
   const re = /^[^\s@]+@([^\s@]+\.)+[^\s@]+$/;
