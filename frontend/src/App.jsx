@@ -73,49 +73,51 @@ function App() {
           onClose={() => setAsideActive(false)}
           isMobile={isMobile}
         />
-        <Routes>
-          <Route path="/login" element={<Login isActive={asideActive} />} />
-          <Route
-            path="/register"
-            element={<Register isActive={asideActive} />}
-          />
-          <Route path="/" element={<Home isActive={asideActive} />} />
-          <Route
-            path="/catalog"
-            element={
-              <Catalog
-                isActive={asideActive}
-                isRightPanelOpen={isRightPanelOpen}
-                isMobile={isMobile}
-              />
-            }
-          />
-          <Route
-            path="/anime/:id"
-            element={<AnimePage isActive={asideActive} />}
-          />
-          <Route
-            path="/profile"
-            element={
-              <ProtectedRoute>
-                <Profile isActive={asideActive} />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/watch/:shikimoriId"
-            element={
-              <ProtectedRoute>
-                <WatchPage
+        <div className="main__container">
+          <Routes>
+            <Route path="/login" element={<Login isActive={asideActive} />} />
+            <Route
+              path="/register"
+              element={<Register isActive={asideActive} />}
+            />
+            <Route path="/" element={<Home isActive={asideActive} />} />
+            <Route
+              path="/catalog"
+              element={
+                <Catalog
                   isActive={asideActive}
                   isRightPanelOpen={isRightPanelOpen}
                   isMobile={isMobile}
                 />
-              </ProtectedRoute>
-            }
-          />
-        </Routes>
-        <Footer isActive={asideActive}/>
+              }
+            />
+            <Route
+              path="/anime/:id"
+              element={<AnimePage isActive={asideActive} />}
+            />
+            <Route
+              path="/profile"
+              element={
+                <ProtectedRoute>
+                  <Profile isActive={asideActive} />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/watch/:shikimoriId"
+              element={
+                <ProtectedRoute>
+                  <WatchPage
+                    isActive={asideActive}
+                    isRightPanelOpen={isRightPanelOpen}
+                    isMobile={isMobile}
+                  />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+          <Footer isActive={asideActive} />
+        </div>
       </BrowserRouter>
     </AuthProvider>
   );
